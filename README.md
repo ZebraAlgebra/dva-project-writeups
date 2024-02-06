@@ -12,7 +12,11 @@ Use options `pdfLaTeX`, with main document set to `main.tex`.
 
 Depending on your editor, there are some slightly different ways of doing so. Overleaf and most other editors have GUIs or shortcut keys for configuring the compilation process.
 
-If you prefer to work on your local machine more than on Overleaf, you may clone this repo and pull the changes when needed.
+If you prefer to work on your local machine more than on Overleaf, you may clone this repo and pull the changes when needed:
+
+```
+git clone https://github.com/ZebraAlgebra/dva-project-writeups
+```
 
 ### Where are packages configured?
 
