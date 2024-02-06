@@ -1,6 +1,6 @@
 # DVA Group Project Writeups - Team 55
 
-This overleaf project / Github repository contains files for our writeups - including proposal, progress report, final report.
+This overleaf project / Github repository contains files for our writeups - including proposal, progress report, final report. Link to the [Overleaf Page](https://www.overleaf.com/project/6597a11521d727340d7dbdca), the [Github Repository](https://github.com/ZebraAlgebra/dva-project-writeups).
 
 The specifications are given [here](https://docs.google.com/document/u/0/d/e/2PACX-1vSlYrMw402tL3F95ay-AaptTdF80UOER-gne_O0kqbuuk6WXrlsjwaYjjS0Jyl95dXYyDLjh9DR1mln/pub?pli=1).
 

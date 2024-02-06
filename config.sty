@@ -18,7 +18,7 @@
     allcolors=blue
 ]{hyperref}
 \RequirePackage[
-    backend=biber,
+    backend=bibtex,
     style=alphabetic
 ]{biblatex}
 \RequirePackage{todonotes}
@@ -56,4 +56,8 @@
     \normalsize \authorD, \authorE, \authorF
 }
 \date{\docDate}
+%%% -- end -- %%%
+
+%%% -- Include .bib file for reference -- %%%
+\addbibresource{ref/\docSrc.bib}
 %%% -- end -- %%%
