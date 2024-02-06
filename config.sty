@@ -1,0 +1,59 @@
+%%% -- add packages here -- %%%
+\RequirePackage[english]{babel}
+\RequirePackage{stix}
+\RequirePackage[
+    letterpaper,
+    margin=1in
+]{geometry}
+\RequirePackage{
+    amsmath,
+    amsthm,
+    amsfonts, 
+    tikz-cd
+}
+\RequirePackage{enumitem}
+\RequirePackage{graphicx}
+\RequirePackage[
+    colorlinks=true,
+    allcolors=blue
+]{hyperref}
+\RequirePackage[
+    backend=biber,
+    style=alphabetic
+]{biblatex}
+\RequirePackage{todonotes}
+%%% -- end -- %%%
+
+%%% -- add custom commands, defs here -- %%%
+% change the following two defs for different reports
+% keys for docSrc: proposal, progress, final
+\def\docSrc{proposal} % or progress, final
+% keys for docHeader Proposal, Progress Report, Final Report
+\def\docHeader{Proposal}
+% change the following defs for managing author names
+% currently names are sorted in alphabetical order
+\def\authorA{Ryan Tsedevsuren}
+\def\authorB{Samuel Wade Wang}
+\def\authorC{Swathi Mohandas Naik}
+\def\authorD{Terrence P Lenaghan}
+\def\authorE{Timothy H Zhang}
+\def\authorF{Tyler J David}
+% change the following def for date
+% if set to empty string no dates will be displayed
+\def\docDate{}
+% change the following for other team details, or add other entries
+\def\teamNum{55}
+\def\teamName{Team Name}
+\def\projectName{Project Name}
+%%% -- end -- %%%
+
+%%% -- Modify for different document header -- %%%
+\title{\Large\textbf{
+    DVA Group Project - \docHeader}
+} % change this to include other info
+\author{
+    \normalsize \authorA, \authorB, \authorC,\\
+    \normalsize \authorD, \authorE, \authorF
+}
+\date{\docDate}
+%%% -- end -- %%%
