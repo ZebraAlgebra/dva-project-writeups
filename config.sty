@@ -3,7 +3,8 @@
 \RequirePackage{stix}
 \RequirePackage[
     letterpaper,
-    margin=1in
+    margin=1in,
+    marginpar=.9in
 ]{geometry}
 \RequirePackage{
     amsmath,
@@ -19,7 +20,17 @@
     backend=bibtex,
     style=alphabetic
 ]{biblatex}
-\RequirePackage{todonotes}
+\RequirePackage[
+    loadshadowlibrary,
+    prependcaption,
+]{todonotes}
+\setuptodonotes{
+    inline,
+    shadow,
+    bordercolor=black,
+    color=yellow,
+    \todoSwitch
+}
 %%% -- end -- %%%
 
 %%% -- add custom commands, defs here -- %%%
@@ -28,6 +39,8 @@
 \def\docSrc{proposal} % or progress, final
 % keys for docHeader Proposal, Progress Report, Final Report
 \def\docHeader{Proposal}
+% key for switching on or off todo notes
+\def\showtodo{True}
 % change the following defs for managing author names
 % currently names are sorted in alphabetical order
 \def\authorA{Ryan Tsedevsuren}
@@ -42,12 +55,20 @@
 % change the following for other team details, or add other entries
 \def\teamNum{55}
 \def\teamName{Team Name}
-\def\projectName{Project Name}
+\def\projectTitle{Project Title}
+\def\courseNameFull{Data and Visual Analytics}
+\def\courseNameAbbrev{DVA}
+\def\todoSwitch{} % disable or leave empty
 %%% -- end -- %%%
 
 %%% -- Modify for different document header -- %%%
-\title{\Large\textbf{
-    DVA Group Project - \docHeader}
+\title{
+    \huge\textbf{
+        {\courseNameAbbrev} Group Project - \docHeader
+    }\\
+    \Large Team Number: \teamNum\\
+    \Large Project Title: \projectTitle
+    
 } % change this to include other info
 \author{
     \normalsize \authorA, \authorB, \authorC,\\
