@@ -4,6 +4,8 @@
 \input{src/proposal/innovations}
 \input{src/proposal/plan}
 \input{src/proposal/checklists}
-\listoftodos[Glossary of Checklists, Todo Items]
+% \listoftodos[Glossary of Checklists, Todo Items]
+\listalerts
 
-\input{example}
+
+\IfEq{\showtodo}{disable}{}{\input{example}}

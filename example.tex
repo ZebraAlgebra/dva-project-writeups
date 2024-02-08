@@ -22,8 +22,25 @@ see also the \texttt{equation, multline, align} environments from the \texttt{am
     \item[...]
 \end{enumerate}
 \paragraph{}In short, \texttt{enumerate, itemize, item} are kinda like \texttt{ol, ul, li} in HTML. Appearance of the items can be tuned via packages, such as \texttt{enumitems}.
-\paragraph{}One can also add notes via the \texttt{todo} package. For example: 
+\paragraph{}One can also add notes via the \texttt{todonotes} package. For example: 
 \todo[
-    caption={Example todo}
+    caption={Example todo},
+    color={yellow!40}
 ]{Finish adding contents to this example.}
+\paragraph{}This document has a custom-defined command called \texttt{alertblock} (name taken from bootstrap) using todonotes' functions. The syntax is:
+\begin{verbatim}
+\alertblock{<alert-type>}{<short-description>}{<long-description>}
+\end{verbatim}
+\paragraph{}Currently, \texttt{<alert-type>} can take values \texttt{todo, checklist, comment}. This command will generate an alert block. For example, the following:
+\begin{verbatim}
+\alertblock{comment}{Example Comment}%
+{An example comment demonstrating what an example comment is.}
+\end{verbatim}
+
+\paragraph{}will result in:
+
+\alertblock{comment}{Example}{An example comment demonstrating what an example comment is.}
+
+\paragraph{}One can completely turn-off the \texttt{todonotes} functionalities by setting the \texttt{showtodo} variable to \texttt{disable} in \texttt{config.sty}.
+
 \paragraph{}One can add URLs like \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ}, or with different names, such the following link to an \href{https://www.youtube.com/watch?v=dQw4w9WgXcQ}{informative video on the benefits of perseverance}.
