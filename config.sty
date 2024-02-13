@@ -43,11 +43,13 @@
     etoolbox
 }
 \RequirePackage{ifdraft}
+% for fontawesome icons
+\RequirePackage{fontawesome5}
 %%% -- end -- %%%
 
 %%% -- add metadatas here -- %%%
 % change the following two defs for different reports
-% key for disabling todo notes, example section
+% key for disabling todo notes, example section; "" or "disable"
 \def\showtodo{}
 % keys for docSrc: proposal, progress, final
 \def\docSrc{proposal} % or progress, final
@@ -77,6 +79,7 @@
 \colorlet{todo}{cyan!40}
 \colorlet{checklist}{yellow!40}
 \colorlet{comment}{pink!40}
+\colorlet{status}{teal!40}
 % customized "listtodos"
 \newcommand{\listalerts}{
     \IfEq{\showtodo}{disable}{}{\listoftodos[Glossary of todo, checklist, comments]}

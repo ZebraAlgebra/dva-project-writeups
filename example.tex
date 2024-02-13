@@ -1,9 +1,22 @@
 \newpage
+
 \section*{Example Usage of Basic {\LaTeX} Commands}
-\paragraph{}Check out \texttt{example.tex} for the contents of this section. This section will be commented out after a while.
-\paragraph{}Here is a reference \cite{example2024}. An inline equation $x^2+1=0$, or in display form:
+
+\subsection*{Where is this Section?}
+\paragraph{}Check out \texttt{example.tex} for the contents of this section.
+
+\subsection*{How do I not see this section?}
+\paragraph{}This section will be commented out after a while; it will also be hidden if the variable \texttt{showtodo} is set to \texttt{disable} (located in \texttt{./config.sty}). You can also comment out this section by comment out the command in \texttt{./src/\docSrc/index.tex} referencing \texttt{./example.tex}.
+
+\subsection*{References, Hyperlinks, Citations}
+\paragraph{}Here is a citation \cite{example2024}. One can add URLs like \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ}, or with different names, such as the following link to an \href{https://www.youtube.com/watch?v=dQw4w9WgXcQ}{informative video on the benefits of perseverance}.
+
+\subsection*{Equations and Formulas}
+\paragraph{}An inline equation $x^2+1=0$, or in display form:
 \[\int_0^1 (x^2+1)\;\mathrm{d}x\]
-see also the \texttt{equation, multline, align} environments from the \texttt{amsmath} package.
+see also the \texttt{equation, multline, align} environments from the \texttt{amsmath} package. The site \href{https://detexify.kirelabs.org/classify.html}{Detexify} can be handy.
+
+\subsection*{Include Graphics (Pictures, Charts...)}
 \paragraph{}A picture can be included using \texttt{includegraphics} (on Overleaf, one may simply use the snippet for begin figure), and referenced via \texttt{ref}, such as \ref{fig:example}; see the top of this page for the graphics included.
 \begin{center}
 \begin{figure}
@@ -13,6 +26,7 @@ see also the \texttt{equation, multline, align} environments from the \texttt{am
     \label{fig:example}
 \end{figure}
 \end{center}
+\subsection*{Ordered or Unordered Lists}
 \paragraph{}Ordered lists and unordered list can be given via the \texttt{enumerate, itemize} environments. For example the first few Heilmeier questions:
 \begin{enumerate}[label=(\arabic*)]
     \item What are you trying to do? Articulate your objectives using absolutely no jargon.
@@ -22,6 +36,8 @@ see also the \texttt{equation, multline, align} environments from the \texttt{am
     \item[...]
 \end{enumerate}
 \paragraph{}In short, \texttt{enumerate, itemize, item} are kinda like \texttt{ol, ul, li} in HTML. Appearance of the items can be tuned via packages, such as \texttt{enumitems}.
+
+\subsection*{Todo Notes and Alert Blocks}
 \paragraph{}One can also add notes via the \texttt{todonotes} package. For example: 
 \todo[
     caption={Example todo},
@@ -31,16 +47,14 @@ see also the \texttt{equation, multline, align} environments from the \texttt{am
 \begin{verbatim}
 \alertblock{<alert-type>}{<short-description>}{<long-description>}
 \end{verbatim}
-\paragraph{}Currently, \texttt{<alert-type>} can take values \texttt{todo, checklist, comment}. This command will generate an alert block. For example, the following:
+\paragraph{}Currently, \texttt{<alert-type>} can take values \texttt{todo, checklist, comment, status}. This command will generate an alert block. For example, the following:
 \begin{verbatim}
 \alertblock{comment}{Example Comment}%
 {An example comment demonstrating what an example comment is.}
 \end{verbatim}
-
 \paragraph{}will result in:
-
 \alertblock{comment}{Example}{An example comment demonstrating what an example comment is.}
-
 \paragraph{}One can completely turn-off the \texttt{todonotes} functionalities by setting the \texttt{showtodo} variable to \texttt{disable} in \texttt{config.sty}.
 
-\paragraph{}One can add URLs like \url{https://www.youtube.com/watch?v=dQw4w9WgXcQ}, or with different names, such the following link to an \href{https://www.youtube.com/watch?v=dQw4w9WgXcQ}{informative video on the benefits of perseverance}.
+\subsection*{Fontawesome Icons}
+\paragraph{}Fontawesome icons can be used in \LaTeX; it is given by the \texttt{fontawesome5} package. For  example, these are some icons for some popular programming languages: \faPython, \faJava, \faJs, \faRust; variants are also possible (if provided), such as for \texttt{faFile}, may use either \faFile, \faFile*~, \faFile[regular]~, or \faFile*[regular]. For more usages, refer to the CTAN documentations.
