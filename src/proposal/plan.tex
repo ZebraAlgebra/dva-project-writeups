@@ -3,3 +3,22 @@
 \alertblock{todo}{Gantt}{Add Gantt Chart / Table}
 \alertblock{comment}{pgfgantt}{In \LaTeX, the \texttt{pgfgantt} package can be used to create Gantt charts; we can also first build the Gantt chart in other programs, and include it into this document as a picture, or use \texttt{pgfgantt} retype it.}
 \alertblock{todo}{Plan Statement}{Add Plan Statement}
+
+\begin{itemize}
+    \item EDA
+
+    We will begin by gathering a set of candidate datasets and analyzing the properties of the distributions. We will determine the feasbility of approaches based on data volume and features available. Finally, we will implement basic processing to prove out the approach to generate the datasets.
+    
+    \item Data Engineering
+
+    We will formally implement an ETL pipeline which processes all datasets into a set of curated data views for consumption in DS models and Web App visualizations. Depending on the data volume this will either be a Spark application or a simple Pandas application. We will utilize cloud infrastructure where applicable and needed.
+    
+    \item Data Science
+
+    We will implement a DS model for book recommendations. This will synthesize the research we have compiled and choose the most appropriate technique for our domain. It may or may not be a neural network based embedding approach. We will utilize cloud infrastructure for training/inference as needed.
+    
+    \item Web App
+
+    We will implement a Flask application with a D3 frontend for visualization. We will implement a basic view for querying the most similar books given an input book. We will implement additional views which show the entire relation graph of said book vs the universe (or library).
+    
+\end{itemize}
